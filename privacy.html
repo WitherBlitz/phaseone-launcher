@@ -20,12 +20,14 @@
 <body>
 <main>
   <h1>PhaseOne Launcher – Privacy Policy</h1>
-  <p class="muted">Effective October 12, 2026 · App: PhaseOne Launcher (com.wither.phaseonelauncher)</p>
+  <p class="muted">Effective October 18, 2026 · App: PhaseOne Launcher (com.wither.phaseonelauncher)</p>
 
   <h2>Summary</h2>
-  <p>PhaseOne Launcher does not collect, sell, or share any personal data. The app has no internet access
-    (it does not request Android's Internet permission), has no accounts, no ads, and no analytics or
-    crash-reporting services. Everything it handles stays on your device.</p>
+  <p>PhaseOne Launcher does not collect, sell, or share any personal data, and the developer runs no servers that
+    receive your data. It has no accounts, no ads, and no analytics or crash-reporting services. It uses the network
+    only for features you start yourself: MultiPhase (sharing a keyboard, mouse and clipboard between your own devices
+    on your local network) and PhaseThrough downloads of Windows runtimes from their makers' own websites. Everything
+    else stays on your device.</p>
 
   <h2>What the app accesses on your device, and why</h2>
   <p>To work as a home screen and desktop, PhaseOne uses the following on your device only. None of it is
@@ -39,6 +41,9 @@
       or maximized windows to leave room for the taskbar, freeze apps with Ice Box when you tap "Close all", take
       screenshots with the Snipping Tool, and notice when you copy something for clipboard history. It does not
       record what you type, and nothing it observes leaves your device.</li>
+    <li><strong>TV Mode KB</strong> (an on-screen keyboard, only if you turn it on in Android's keyboard settings): types
+      the keys you pick with a remote or controller into the app you're using. It doesn't store, log, or send what you
+      type.</li>
     <li><strong>Clipboard</strong>: if clipboard history is on, your last 50 copies (text, pictures, file references)
       are stored in the app's private storage on your device. You can delete them at any time with "Clear all", or
       turn clipboard history off in settings.</li>
@@ -47,8 +52,18 @@
     <li><strong>Audio and nearby devices</strong> (Modify audio settings, Nearby devices): to show the volume flyout,
       mute the microphone, and switch audio output between your phone, monitor and Bluetooth devices. No scanning
       for location is done.</li>
-    <li><strong>Network state</strong>: only to show the Wi-Fi/network icon in the taskbar. The app cannot use the
-      network.</li>
+    <li><strong>Network state</strong>: to show the Wi-Fi/network icon in the taskbar.</li>
+    <li><strong>Local network</strong> (Internet, Wi-Fi multicast, connected-device foreground service), only while
+      MultiPhase is on: your devices find each other on your local network, pair with a code you confirm, and then
+      send keyboard and mouse input, screen layout, and (if you copy something) clipboard contents directly to each
+      other, encrypted with TLS. Nothing goes through the developer or any other server. While the "Get MultiPhase
+      for Windows" sheet is open, the phone also serves the Windows installer to computers on your network.</li>
+    <li><strong>Downloads</strong> (PhaseThrough, only when you choose to install one): Windows runtimes such as the
+      Visual C++ and .NET redistributables are downloaded directly from Microsoft's or NVIDIA's own servers and checked
+      against a fixed fingerprint. Those servers see an ordinary download request (your IP address), under their own
+      privacy policies.</li>
+    <li><strong>Web search</strong>: if you search the web from the search box, your search is opened in your browser
+      (Google search), under Google's privacy policy.</li>
     <li><strong>Ice Box</strong> (if installed): to freeze and unfreeze apps you choose, through Ice Box's own interface.</li>
   </ul>
 
